@@ -1,9 +1,6 @@
----
-title: "README"
-author: "Andreas Renner"
-date: "January 31, 2018"
-output: html_document
----
+# README
+*Author: Andreas Renner*  
+*Date: January 31, 2018*
 
 ## Contents
 

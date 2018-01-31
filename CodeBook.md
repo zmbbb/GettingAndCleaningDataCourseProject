@@ -1,11 +1,6 @@
----
-title: "Code Book"
-author: "Andreas Renner"
-date: "January 31, 2018"
-output:
-  pdf_document: default
-  html_document: default
----
+# Code Book
+*Author: Andreas Renner*  
+*Date: January 31, 2018*
 
 
 ## Introduction
@@ -123,11 +118,11 @@ Each of the 66 relevant features had its own column in the current table. Howeve
 ### 7. Calculating Aggregated Means
 For each of the 66 features found in `tidy`,  the average for each activity and each subject has been calculated and stored in column `mean_value`.
 
-**The result has been stored in data.frame `tidy_mean`.**
+**The result has been stored in data.frame `tidy_mean` and exported as `tidy_mean.txt`.**
 
 
 ## Code Book
-### tidy
+### Table `tidy`
 | Column | Type | Description |
 | ------ | ---- | ----------  |
 | source_set | factor | "train" or "test" depending on whether row was taken from training or test data. |
@@ -136,7 +131,7 @@ For each of the 66 features found in `tidy`,  the average for each activity and 
 | feature | chr | Measurement name taken from `features.txt` and modified as described in Step 1. Read `features_info.txt` for additional information on the measurements. |
 | feature_value | num | Measurement value from `X` tables. |
 
-###tidy_mean
+### Table `tidy_mean`
 | Column | Type | Description |
 | ------ | ---- | ----------  |
 | activity | factor | Descriptive activity label taken from `activity_labels.txt`, one of "LAYING", "SITTING", "STANDING", "WALKING", "WALKING_DOWNSTAIRS", "WALKING_UPSTAIRS" |
